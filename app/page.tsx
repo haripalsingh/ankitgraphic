@@ -7,6 +7,7 @@ import Testimonails from "./components/Testimonails";
 import People from "./components/People";
 import Footerbottom from "./components/Footerbottom";
 import Contact from "./components/Contact";
+import Footerlogo from "./components/Footerlogo";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
      <People/>
      <Footerbottom />
      <Contact/>
+     <Footerlogo/>
    </>
   );
 }
