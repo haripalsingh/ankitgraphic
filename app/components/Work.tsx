@@ -9,7 +9,7 @@ import portfolio4 from "../../public/images/portfolio-4.png";
 const Work = () => {
   return (
     <>
-      <section className="border-b border-blue-600">
+      <section id="work" className="border-b border-blue-600">
       <div className="max-w-7xl mx-auto  border-l border-r border-blue-600">
 
              <div className="grid grid-cols-1 md:grid-cols-12 gap-4 mb-4">
