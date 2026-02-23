@@ -1,6 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Contact from "../components/Contact";
+import Footerlogo from "../components/Footerlogo";
+
 
 const projects = [
   { title: "Project One", subtitle: "Branding & Web Design", image: "/images/portfolio-1.png", href: "#" },
@@ -30,7 +33,7 @@ export default function WorkPage() {
 
       {/* Work – Highlights + Contact */}
       <section className="border-b border-blue-600">
-        <div className="max-w-7xl mx-auto border-l border-r border-blue-600">
+        <div className="max-w-7xl mx-auto border-l border-r border-blue-600 px-6 md:px-12 lg:px-16">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-4 px-6 md:px-12 lg:px-16 py-6 md:py-8">
             <div className="col-span-1 md:col-span-6 flex items-center">
               <p className="text-blue-600 font-bold leading-tight tracking-tight text-2xl md:text-3xl">
@@ -52,7 +55,7 @@ export default function WorkPage() {
 
       {/* Project grid */}
       <section className="border-b border-blue-600">
-        <div className="max-w-7xl mx-auto border-l border-r border-blue-600">
+        <div className="max-w-7xl mx-auto border-l border-r border-blue-600 px-6 md:px-12 lg:px-16">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
             {projects.map((project, i) => (
               <div
@@ -97,6 +100,10 @@ export default function WorkPage() {
           </h2>
         </div>
       </section>
+
+      <Contact/>
+     <Footerlogo/>
+     
     </main>
   );
 }

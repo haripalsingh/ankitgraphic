@@ -22,7 +22,7 @@ const Ourclients = () => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 5,
+    slidesToShow: 6,
     slidesToScroll: 1,
     autoplay: true,
     //autoplaySpeed:,
@@ -76,9 +76,10 @@ const Ourclients = () => {
             {logos.map((logo, index) => (
               <div key={index} className="flex justify-center">
                 <Image
+                
                   src={logo}
                   alt="client logo"
-                  className="w-40 h-auto object-contain"
+                  className="w-40 h-20 object-contain border border-blue-100"
                 />
               </div>
             ))}

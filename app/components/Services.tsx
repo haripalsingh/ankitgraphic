@@ -9,19 +9,19 @@ const Services = () => {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-6 mr-3 pb-24">
         <div className="col-span-1 md:col-span-3">
           <div className="text-blue-600 font-bold leading-tight tracking-tight text-lg text-left pl-5 pr-5">
-            View our Work
+            View our Work:
           </div>
         </div>
         <div className="col-span-1 md:col-span-9">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-4 mb-4">
             <div className="col-span-1 md:col-span-4 ">
-               <Link href="#" className="border-blue-700 text-blue-600 border-b  border-dashed pb-3  flex items-center justify-between">
-                <span>Brand Identity Design{" "}</span>
+               <Link href="#" className="border-blue-700  text-blue-600 border-b  border-dashed pb-3  flex items-center justify-between">
+                <span className="text-lg font-bold">Brand Identity Design</span>
                      <svg
-  className="w-8 h-8 text-blue-600 rotate-180"
+  className="w-6 h-8 text-blue-600 rotate-180"
   fill="none"
   stroke="currentColor"
-  strokeWidth="8"
+  strokeWidth="6"
   viewBox="0 0 100 100"
 >
   <line x1="10" y1="50" x2="80" y2="50" />
@@ -32,12 +32,13 @@ const Services = () => {
             </div>
             <div className="col-span-1 md:col-span-4">
             <Link href="#" className="border-blue-700 text-blue-600 border-b  border-dashed pb-3  flex items-center justify-between">
-                <span>Brand Identity Design{" "}</span>
+            <span className="text-lg font-bold">Website Design
+                </span>
                      <svg
-  className="w-8 h-8 text-blue-600 rotate-180"
+  className="w-6 h-8 text-blue-600 rotate-180"
   fill="none"
   stroke="currentColor"
-  strokeWidth="8"
+  strokeWidth="6"
   viewBox="0 0 100 100"
 >
   <line x1="10" y1="50" x2="80" y2="50" />
@@ -47,12 +48,13 @@ const Services = () => {
             </div>
             <div className="col-span-1 md:col-span-4">
               <Link href="#" className="border-blue-700 text-blue-600 border-b  border-dashed pb-3  flex items-center justify-between">
-                <span>Brand Identity Design{" "}</span>
+              <span className="text-lg font-bold">App / Product Design
+                </span>
                      <svg
-  className="w-8 h-8 text-blue-600 rotate-180"
+  className="w-6 h-8 text-blue-600 rotate-180"
   fill="none"
   stroke="currentColor"
-  strokeWidth="8"
+   strokeWidth="6"
   viewBox="0 0 100 100"
 >
   <line x1="10" y1="50" x2="80" y2="50" />
@@ -65,12 +67,13 @@ const Services = () => {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-4 mb-4">
             <div className="col-span-1 md:col-span-4">
              <Link href="#" className="border-blue-700 text-blue-600 border-b  border-dashed pb-3  flex items-center justify-between">
-                <span>Brand Identity Design{" "}</span>
+             <span className="text-lg font-bold">Brand Strategy
+                </span>
                      <svg
-  className="w-8 h-8 text-blue-600 rotate-180"
+  className="w-6 h-8 text-blue-600 rotate-180"
   fill="none"
   stroke="currentColor"
-  strokeWidth="8"
+    strokeWidth="6"
   viewBox="0 0 100 100"
 >
   <line x1="10" y1="50" x2="80" y2="50" />
@@ -80,12 +83,13 @@ const Services = () => {
             </div>
             <div className="col-span-1 md:col-span-4">
           <Link href="#" className="border-blue-700 text-blue-600 border-b  border-dashed pb-3  flex items-center justify-between">
-                <span>Brand Identity Design{" "}</span>
+          <span className="text-lg font-bold">Art Direction
+                </span>
                      <svg
-  className="w-8 h-8 text-blue-600 rotate-180"
+  className="w-6 h-8 text-blue-600 rotate-180"
   fill="none"
   stroke="currentColor"
-  strokeWidth="8"
+  strokeWidth="6"
   viewBox="0 0 100 100"
 >
   <line x1="10" y1="50" x2="80" y2="50" />
@@ -95,12 +99,13 @@ const Services = () => {
             </div>
             <div className="col-span-1 md:col-span-4">
               <Link href="#" className="border-blue-700 text-blue-600 border-b  border-dashed pb-3  flex items-center justify-between">
-                <span>Brand Identity Design{" "}</span>
+              <span className="text-lg font-bold">Illustration
+                </span>
                      <svg
-  className="w-8 h-8 text-blue-600 rotate-180"
+  className="w-6 h-8 text-blue-600 rotate-180"
   fill="none"
   stroke="currentColor"
-  strokeWidth="8"
+   strokeWidth="6"
   viewBox="0 0 100 100"
 >
   <line x1="10" y1="50" x2="80" y2="50" />
@@ -113,12 +118,13 @@ const Services = () => {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-4 mb-4">
             <div className="col-span-1 md:col-span-4">
                <Link href="#" className="border-blue-700 text-blue-600 border-b  border-dashed pb-3  flex items-center justify-between">
-                <span>Brand Identity Design{" "}</span>
+               <span className="text-lg font-bold">Photography
+                </span>
                      <svg
-  className="w-8 h-8 text-blue-600 rotate-180"
+  className="w-6 h-8 text-blue-600 rotate-180"
   fill="none"
   stroke="currentColor"
-  strokeWidth="8"
+   strokeWidth="6"
   viewBox="0 0 100 100"
 >
   <line x1="10" y1="50" x2="80" y2="50" />
@@ -128,12 +134,13 @@ const Services = () => {
             </div>
             <div className="col-span-1 md:col-span-4">
              <Link href="#" className="border-blue-700 text-blue-600 border-b  border-dashed pb-3  flex items-center justify-between">
-                <span>Brand Identity Design{" "}</span>
+             <span className="text-lg font-bold">Pitch Decks 
+                </span>
                      <svg
-  className="w-8 h-8 text-blue-600 rotate-180"
+  className="w-6 h-8 text-blue-600 rotate-180"
   fill="none"
   stroke="currentColor"
-  strokeWidth="8"
+    strokeWidth="6"
   viewBox="0 0 100 100"
 >
   <line x1="10" y1="50" x2="80" y2="50" />
@@ -141,21 +148,7 @@ const Services = () => {
 </svg>
               </Link>
             </div>
-            <div className="col-span-1 md:col-span-4">
-              <Link href="#" className="border-blue-700 text-blue-600 border-b  border-dashed pb-3  flex items-center justify-between">
-                <span>Brand Identity Design{" "}</span>
-                     <svg
-  className="w-8 h-8 text-blue-600 rotate-180"
-  fill="none"
-  stroke="currentColor"
-  strokeWidth="8"
-  viewBox="0 0 100 100"
->
-  <line x1="10" y1="50" x2="80" y2="50" />
-  <polyline points="55,25 80,50 55,75" />
-</svg>
-              </Link>
-            </div>
+           
           </div>
         </div>
       </div>

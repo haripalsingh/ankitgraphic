@@ -1,9 +1,9 @@
 "use client";
 
-import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
-import ankitgraphic from '../../public/images/Ankitgraphic 1.png'
+import ankitgraphic from '../../public/images/ankitgraphic-logo.png'
 
 const navLinks = [
   { href: "/work", label: "Work" },
@@ -24,7 +24,7 @@ const Header = () => {
             {/* Logo */}
             <div className="flex items-center">
               <Link href="/" className="text-2xl font-bold text-blue-600">
-                <img src={ankitgraphic.src} alt="Ankit Graphic" width={296} height={61} />
+                <Image src={ankitgraphic.src} alt="Ankit Graphic" width={270} height={55} />
               </Link>
             </div>
 

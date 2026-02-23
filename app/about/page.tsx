@@ -1,5 +1,7 @@
 import React from "react";
 import Link from "next/link";
+import Contact from "../components/Contact";
+import Footerlogo from "../components/Footerlogo";
 
 const philosophy = [
   {
@@ -139,27 +141,9 @@ export default function AboutUsPage() {
         </div>
       </section>
 
-      {/* Work highlights CTA */}
-      <section className="border-b border-blue-600">
-        <div className="max-w-7xl mx-auto border-l border-r border-blue-600 px-6 md:px-12 lg:px-16 py-12 md:py-16">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-            <div>
-              <p className="text-blue-600 font-bold text-sm uppercase tracking-wider mb-2">
-                Work – Highlights
-              </p>
-              <p className="text-gray-700 text-lg">
-                See what we&apos;ve made for our clients.
-              </p>
-            </div>
-            <Link
-              href="/#work"
-              className="inline-flex items-center justify-center rounded-full bg-blue-600 px-8 py-3 text-sm font-semibold text-white hover:bg-blue-700 transition shrink-0"
-            >
-              View our Work
-            </Link>
-          </div>
-        </div>
-      </section>
+             
+    <Contact/>
+     <Footerlogo/>
     </main>
   );
 }

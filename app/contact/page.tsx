@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import Link from "next/link";
-
+import Contact from "../components/Contact";
+import Footerlogo from "../components/Footerlogo";
 const email = "hello@ankitgraphic.com";
 
 const socialLinks = [
@@ -81,50 +81,10 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Elsewhere online */}
-      <section className="border-b border-blue-600">
-        <div className="max-w-7xl mx-auto border-l border-r border-blue-600 px-6 md:px-12 lg:px-16 py-12 md:py-20">
-          <p className="text-blue-600 font-bold text-sm uppercase tracking-wider mb-4">
-            Elsewhere online
-          </p>
-          <h2 className="text-xl md:text-2xl font-bold leading-tight text-gray-900 max-w-xl mb-10">
-            You can also find us here:
-          </h2>
-          <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {socialLinks.map((item) => (
-              <li key={item.icon}>
-                <Link
-                  href={item.href}
-                  className="group flex items-center gap-3 text-gray-700 hover:text-blue-600 transition font-medium"
-                >
-                  <span className="text-lg">{item.label}</span>
-                  <svg
-                    className="w-5 h-5 text-blue-600 opacity-80 group-hover:translate-x-1 transition"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
-
-      {/* Tagline */}
-      <section className="border-b border-blue-600">
-        <div className="max-w-7xl mx-auto border-l border-r border-blue-600 px-6 md:px-12 lg:px-16 py-12 md:py-16">
-          <p className="text-blue-600 font-bold text-sm uppercase tracking-wider mb-2">
-            Brand / Web / Creative
-          </p>
-          <p className="text-gray-700 text-lg max-w-2xl">
-            Working with brands ready to stand out. If you&apos;re bored of blending in, drop us a line and let&apos;s bring your brand to life.
-          </p>
-        </div>
-      </section>
+      
+    <Contact/>
+     <Footerlogo/>
+      
     </main>
   );
 }

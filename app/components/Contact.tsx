@@ -4,8 +4,10 @@ import React, { use } from "react";
 import Services from "./Services";
 import Link from "next/link";
 
+
 const Ourclients = () => {
   return (
+    <>
     <section id="contact" className="relative border-b border-blue-500">
       <div className="max-w-7xl mx-auto   border-l border-r border-blue-500">
         <div className="grid grid-cols-1 md:grid-cols-12 ">
@@ -180,6 +182,8 @@ const Ourclients = () => {
         </div>
     
     </section>
+   
+     </>
   );
 };
 

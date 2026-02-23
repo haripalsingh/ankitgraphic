@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { The_Nautigal } from 'next/font/google'
+import { Manrope } from "next/font/google";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 import "./globals.css";
 
-const nautigal = The_Nautigal({
-  subsets: ['latin'],
-  weight: ['400', '700'], // available weights
-  variable: '--font-nautigal',
+const manrope = Manrope({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-manrope",
 })
 
 
@@ -26,7 +26,7 @@ export default function RootLayout({
         <html lang="en" >
 
       <body
-        className={`${nautigal.variable} antialiased`}
+        className={`${manrope.variable} font-sans antialiased`}
       >
         <Header/>
         {children}
