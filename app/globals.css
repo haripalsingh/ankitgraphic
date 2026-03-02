@@ -55,3 +55,12 @@ body {
 .banner-slider .slick-next:hover:before {
   opacity: 1;
 }
+
+.grid-bg {
+  background-color: #fff;  
+  background-image: 
+    linear-gradient(#dcdcdc 1px, transparent 1px),
+    linear-gradient(90deg, #dcdcdc 1px, transparent 1px);
+
+  background-size: 40px 40px;  
+}

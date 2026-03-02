@@ -1,90 +1,41 @@
-"use client";
-
-import React, { useState } from "react";
+import React from "react";
+import Link from "next/link";
 import Contact from "../components/Contact";
 import Footerlogo from "../components/Footerlogo";
-const email = "hello@ankitgraphic.com";
+import Videobanner from "../components/Videobanner";
 
-const socialLinks = [
-  { label: "Dribbble", href: "#", icon: "dribbble" },
-  { label: "Twitter", href: "#", icon: "twitter" },
-  { label: "Instagram", href: "#", icon: "instagram" },
-  { label: "LinkedIn", href: "#", icon: "linkedin" },
-];
-
-function CopyIcon({ className }: { className?: string }) {
+ 
+export default function AboutUsPage() {
   return (
-    <svg className={className} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-    </svg>
-  );
-}
-
-function CheckIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-    </svg>
-  );
-}
-
-export default function ContactPage() {
-  const [copied, setCopied] = useState(false);
-
-  const handleCopy = async () => {
-    try {
-      await navigator.clipboard.writeText(email);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    } catch {
-      // fallback for older browsers
-      setCopied(false);
-    }
-  };
-
-  return (
-    <main className="pt-20">
-      {/* Get in touch */}
+    <main className="mt-16">
       <section className="border-b border-blue-600">
-        <div className="max-w-7xl mx-auto border-l border-r border-blue-600 px-6 md:px-12 lg:px-16 py-12 md:py-20">
-          <p className="text-blue-600 font-bold text-sm uppercase tracking-wider mb-4">
-            Get in touch
+        <div className="max-w-7xl mx-auto border-l border-r border-blue-600 ">
+           <div className="grid grid-cols-1 md:grid-cols-12 gap-4 px-6 py-12 md:py-16">
+            <div className="col-span-1 md:col-span-4 ">
+                    <p className="text-blue-600 font-bold text-sm uppercase tracking-wider mb-4 ">
+          Get in touch:
+
           </p>
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-gray-900 max-w-2xl mb-10">
-            If you&apos;d like to chat, you can reach us at:
-          </h1>
-          <div className="flex flex-wrap items-center gap-4 md:gap-6">
-            <span className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 break-all">
-              {email}
-            </span>
-            <button
-              type="button"
-              onClick={handleCopy}
-              className="inline-flex items-center gap-2 rounded-full border-2 border-blue-600 bg-transparent px-5 py-2.5 text-sm font-semibold text-blue-600 hover:bg-blue-600 hover:text-white transition"
-            >
-              {copied ? (
-                <>
-                  <CheckIcon className="w-4 h-4" />
-                  Copied
-                </>
-              ) : (
-                <>
-                  <CopyIcon className="w-4 h-4" />
-                  Copy
-                </>
-              )}
-            </button>
-          </div>
-          <p className="mt-4 text-sm text-gray-500">
-            Copy to Clipboard
+            </div>
+              <div className="col-span-1 md:col-span-8">
+              
+          <p className="lg:text-5xl xl:text-6xl font-bold leading-tight  text-blue-600 text-sm ">
+           
+If you'd like to chat, you can reach me at:
+sales@ankitgraphic.com
           </p>
+            </div>
+            </div>
+
+          
         </div>
       </section>
 
       
+  
+             
     <Contact/>
      <Footerlogo/>
-      
     </main>
   );
 }

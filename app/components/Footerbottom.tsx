@@ -15,7 +15,7 @@ const Ourclients = () => {
           <div className="col-span-1 md:col-span-6">
               <div className='p-4 flex items-center justify-center '>
                 <div>
-                <h3>Kus  ©  2025
+                <h3>Ankit Graphic © 2026
                 </h3>
                 <p>Working with brands ready to break the mould. If you’re bored of blending in drop us a line and let’s bring your brand to life.
 

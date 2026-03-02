@@ -18,26 +18,43 @@ const projects = [
 
 export default function WorkPage() {
   return (
-    <main className="pt-20">
+    <main >
       {/* What we do */}
+    
+
+
       <section className="border-b border-blue-600">
-        <div className="max-w-7xl mx-auto border-l border-r border-blue-600 px-6 md:px-12 lg:px-16 py-12 md:py-20">
-          <p className="text-blue-600 font-bold text-sm uppercase tracking-wider mb-4">
-            What we do
+        <div className="max-w-7xl mx-auto border-l border-r border-blue-600 ">
+           <div className="grid grid-cols-1 md:grid-cols-12 gap-4 px-6 md:px-12 lg:px-16 py-12 md:py-20">
+            <div className="col-span-1 md:col-span-4 ">
+                    <p className="text-blue-600 font-bold text-sm uppercase tracking-wider mb-4 mt-8">
+            Founder
           </p>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight text-gray-900 max-w-3xl">
-            Bold brands, striking creative and smart digital design.
-          </h1>
+            </div>
+              <div className="col-span-1 md:col-span-8">
+          <p className="mt-8  text-6xl leading-tight
+ text-blue-600 font-bold">
+          Bold brands, striking
+creative and smart
+digital design.
+          </p>
+            </div>
+            </div>
+
+          
         </div>
       </section>
 
+
+
+
       {/* Work – Highlights + Contact */}
       <section className="border-b border-blue-600">
-        <div className="max-w-7xl mx-auto border-l border-r border-blue-600 px-6 md:px-12 lg:px-16">
+        <div className="max-w-7xl mx-auto border-l border-r border-blue-600 ">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-4 px-6 md:px-12 lg:px-16 py-6 md:py-8">
             <div className="col-span-1 md:col-span-6 flex items-center">
               <p className="text-blue-600 font-bold leading-tight tracking-tight text-2xl md:text-3xl">
-                Work –<br />
+                Work -<br />
                 Highlights
               </p>
             </div>
@@ -55,7 +72,7 @@ export default function WorkPage() {
 
       {/* Project grid */}
       <section className="border-b border-blue-600">
-        <div className="max-w-7xl mx-auto border-l border-r border-blue-600 px-6 md:px-12 lg:px-16">
+        <div className="max-w-7xl mx-auto border-l border-r border-blue-600 ">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
             {projects.map((project, i) => (
               <div
@@ -88,18 +105,36 @@ export default function WorkPage() {
           </div>
         </div>
       </section>
+            
+            
 
-      {/* People we've made things for */}
-      <section className="border-b border-blue-600">
-        <div className="max-w-7xl mx-auto border-l border-r border-blue-600 px-6 md:px-12 lg:px-16 py-12 md:py-20">
-          <p className="text-blue-600 font-bold text-sm uppercase tracking-wider mb-4">
-            People we&apos;ve made things for
+
+ <section className="border-b border-blue-600">
+        <div className="max-w-7xl mx-auto border-l border-r border-blue-600 bg-blue-600">
+           <div className="grid grid-cols-1 md:grid-cols-12 gap-4 px-6 md:px-12 lg:px-16 py-12 md:py-20">
+            <div className="col-span-1 md:col-span-4 ">
+                    <p className="text-white font-bold text-sm uppercase tracking-wider mb-4 ">
+        Get in touch:
+
           </p>
-          <h2 className="text-xl md:text-2xl font-bold leading-tight text-gray-900 max-w-2xl">
-            Over the years we&apos;ve had the privilege of working with many great people and companies in design and digital.
+            </div>
+              <div className="col-span-1 md:col-span-8">
+                   <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-white max-w-3xl mb-16">
+ 
+Have a project in mind you’d like to talk about? Drop me a line, I'd love to chat. 
+sales@ankitgraphic.com
           </h2>
+
+ 
+             
+ 
+            </div>
+            </div>
+
+          
         </div>
       </section>
+
 
       <Contact/>
      <Footerlogo/>
